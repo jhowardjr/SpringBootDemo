@@ -43,8 +43,10 @@ dependencies {
 	compile("org.springframework.boot:spring-boot-starter-security")
 	runtime('com.h2database:h2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile 'org.springframework.restdocs:spring-restdocs-mockmvc'
     compile 'javax.xml.bind:jaxb-api'
 	compile 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
     compile 'org.jetbrains.kotlin:kotlin-stdlib'
     compile 'org.jetbrains.kotlin:kotlin-reflect'
+    
 }
