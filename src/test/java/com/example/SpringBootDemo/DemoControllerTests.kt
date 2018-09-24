@@ -14,7 +14,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 // TODO: LOAD CUSTOM SECURITY CONFIGURATON INSTEAD OF BYPASSING SECURITY
 @WebMvcTest(value = DemoController::class, secure = false)
 @AutoConfigureRestDocs
-class DemoControllerTest {
+class DemoControllerTests {
 
     @Autowired
     private lateinit var mvc: MockMvc

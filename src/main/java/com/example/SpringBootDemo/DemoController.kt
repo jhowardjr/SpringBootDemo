@@ -1,5 +1,6 @@
 package com.example.SpringBootDemo
 
+import com.example.SpringBootDemo.Models.Fortunes
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
@@ -7,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController
 class DemoController {
     @RequestMapping(value = "/")
     fun index(): String {
-        return "Hello Kotlin World!!"
+        return Fortunes().getRandom()
     }
 }
